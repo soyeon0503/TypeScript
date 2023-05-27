@@ -1,0 +1,22 @@
+// 타입스크립트 컴파일러 옵션 설정
+// include 배열 안에 넣는 값은 컴파일 할 파일 위치이다. 이 옵션을 지정하면 tsc 명령어 할 때 path를 지정해 줄 필요가 없다
+// 그냥 src 어쩌고만 하면 됨
+// compilerOptions 의 옵션으로 target 으로 자바스크립트 버전을 지정할 수 있다
+// 만약 ES5로 지정한다면 화살표 함수는 일반 함수로 컴파일 될 것이다
+// outDir => 컴파일 된 자바스크립트 파일을 저장할 파일
+// strict => 컴파일을 엄격하게 할건지,,
+// ts-node => ts-node가 esm을 이해할 수 있다
+
+{
+  "include": [ "230527"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force"
+  },
+  "ts-node": {
+    "esm" : true
+  },
+}
