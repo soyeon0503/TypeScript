@@ -6,14 +6,31 @@
 // outDir => 컴파일 된 자바스크립트 파일을 저장할 파일
 // strict => 컴파일을 엄격하게 할건지,,
 // ts-node => ts-node가 esm을 이해할 수 있다
+// StrictNullChecks : false => null타입이 아닌 변수에 null을 넣는 걸 허용할거냐
+// strict는 StrictNullChecks 상위 옵션이다. 
+
+// {
+//   "include": [ "230527"],
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "outDir": "dist",
+//     "strict": false,
+//     "moduleDetection": "force"
+//   },
+//   "ts-node": {
+//     "esm" : true
+//   },
+// }
 
 {
   "include": [ "230527"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "outDir": "dist",
+    "outDir": "./230527/dist",
     "strict": false,
+    "strictNullChecks": false,
     "moduleDetection": "force"
   },
   "ts-node": {
