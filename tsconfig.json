@@ -23,17 +23,16 @@
 //   },
 // }
 
-{
-  "include": [ "230722"],
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "outDir": "./230722/dist",
-    "strict": false,
-    "strictNullChecks": false,
-    "moduleDetection": "force"
-  },
-  "ts-node": {
-    "esm" : true
-  },
-}
+// {
+//   "include": [ "230826"],
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "strict": false,
+//     "strictNullChecks": false,
+//     "moduleDetection": "force"
+//   },
+//   "ts-node": {
+//     "esm" : true
+//   },
+// }
